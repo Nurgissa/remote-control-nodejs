@@ -13,8 +13,8 @@ export function getSquarePoints(x: number, y: number, width: number) {
 export function getRectanglePoints(
   x: number,
   y: number,
-  length: number,
-  width: number
+  width: number,
+  length: number
 ): Point[] {
   return [
     new Point(x, y),
