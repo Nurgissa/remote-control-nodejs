@@ -5,7 +5,9 @@ export async function screenHandler() {
   const { x, y } = await mouse.getPosition();
   let prompt = "";
   try {
-    const image = await screen.grabRegion(new Region(x, y, 200, 200));
+    const image = await screen.grabRegion(
+      new Region(x - 100, y - 100, 200, 200)
+    );
     const buffer = await image.toRGB();
     const jimp = new Jimp(buffer);
     const dataImage = (await jimp.getBase64Async(MIME_PNG)).replace(
