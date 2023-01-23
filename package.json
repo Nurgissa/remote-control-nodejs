@@ -1,0 +1,35 @@
+{
+  "name": "remote-control-nodejs",
+  "version": "0.0.1",
+  "description": "Websocker remote control",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "nodemon src/index.ts",
+    "start:prod": "tsc --project ./ && node ./dist/server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nurgissa/remote-control-nodejs.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nurgissa/remote-control-nodejs/issues"
+  },
+  "homepage": "https://github.com/Nurgissa/remote-control-nodejs#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/ws": "^8.5.4",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@nut-tree/nut-js": "^3.0.1-next.20230117103019",
+    "jimp": "^0.16.2",
+    "ws": "^8.12.0"
+  }
+}
