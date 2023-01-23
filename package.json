@@ -2,9 +2,9 @@
   "name": "remote-control-nodejs",
   "version": "0.0.1",
   "description": "Websocker remote control",
-  "main": "src/index.ts",
+  "main": "src/server/index.ts",
   "scripts": {
-    "start": "nodemon src/index.ts",
+    "start": "nodemon src/server/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
